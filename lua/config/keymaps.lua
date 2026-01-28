@@ -28,3 +28,12 @@ map({ "n", "i", "v" }, "<Esc>", function()
   vim.cmd.nohlsearch() -- Clear search highlights
   vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<Esc>", true, false, true), "n", false)
 end, create_opts())
+
+map("n", "<C-d>", "<C-d>zz", create_opts())
+map("n", "<C-u>", "<C-u>zz", create_opts())
+map("t", "<Esc><Esc>", "<C-\\><C-n>", create_opts())
+
+if vim.fn.exists('cmdline("Oil")') then
+  map("n", "<Leader>po", "<Cmd>Oil<CR>", create_opts())
+  map("n", "<Leader>pv", "<Cmd>Oil<CR>", create_opts())
+end
