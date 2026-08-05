@@ -1,6 +1,5 @@
 local ok, noice = pcall(require, "noice")
 if not ok then
-  vim.print("Noice not enabled")
   return
 end
 
