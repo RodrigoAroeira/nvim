@@ -15,7 +15,7 @@ vim.opt.fillchars = table.concat(
   ","
 )
 
-vim.cmd("colorscheme everforest")
+vim.cmd("colorscheme gruber-darker")
 
 -- List characters
 vim.opt.wrap = false
