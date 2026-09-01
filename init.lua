@@ -28,13 +28,4 @@ vim.opt.listchars = {
   precedes = "‹", -- when lines continue left
 }
 
--- UI settings
--- vim.opt.relativenumber = true
--- vim.opt.number = true
--- vim.opt.ignorecase = true
--- vim.opt.smartcase = true
--- vim.opt.incsearch = true
--- vim.opt.modeline = true
--- vim.opt.iminsert = 0
--- vim.opt.imsearch = 0
--- vim.opt.autoindent = true
+_ = pcall(require, "tweaks")
